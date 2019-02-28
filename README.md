@@ -18,22 +18,22 @@ npm i --save react-native-document-picker
 Link native packages via the following command:
 
 ```
-react-native link
+react-native link react-native-document-picker
 ```
 
 **Manually Link Native Modules**
 
 1. Run `npm install react-native-document-picker --save`
 2. Open your project in XCode, right click on `Libraries` and click `Add
-   Files to "Your Project Name"` [(Screenshot)](http://url.brentvatne.ca/jQp8) then [(Screenshot)](http://url.brentvatne.ca/1gqUD).
+   Files to "Your Project Name"`, select `RNDocumentPicker.xcodeproj` [(Screenshot)](http://url.brentvatne.ca/jQp8) then [(Screenshot)](http://url.brentvatne.ca/1gqUD).
 3. Add `libRNDocumentPicker.a` to `Build Phases -> Link Binary With Libraries`
-   [(Screenshot)](http://url.brentvatne.ca/17Xfe).
+   https://facebook.github.io/react-native/docs/linking-libraries-ios
 
 **CocoaPods**
 
 Add the following to your podfile:
 ```
-pod 'react-native-document-picker', :path => '../node_modules/react-native-document-picker`
+pod 'react-native-document-picker', :path => '../node_modules/react-native-document-picker'
 ```
 
 ### Android
@@ -61,6 +61,7 @@ dependencies {
 ...
 
 import io.github.elyx0.reactnativedocumentpicker.DocumentPickerPackage; // Import package
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -167,6 +168,12 @@ try {
 
 ## Here is how it looks:
 ![screenshot](http://i.stack.imgur.com/dv0iQ.png)
+
+
+## Common issues ⚠️
+
+Please check these issues tagged [addTo FAQ](https://github.com/Elyx0/react-native-document-picker/issues?utf8=%E2%9C%93&q=+is%3Aissue+label%3A%22addto%3A+FAQ%22+)
+
 
 
 ## How to send it back ?
